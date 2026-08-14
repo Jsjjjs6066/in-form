@@ -1,6 +1,13 @@
 [package]
 name = "in_form"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2024"
+description = "Define a type and get your data from a GUI without writing one."
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Jsjjjs6066/in-form"
+keywords = ["form", "ui", "input"]
+categories = ["development-tools"]
+authors = ["Leon Žlender"]
 
 [dependencies]
