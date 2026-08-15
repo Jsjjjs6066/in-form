@@ -4,14 +4,14 @@ version = 4
 
 [[package]]
 name = "in_form"
-version = "1.0.0"
+version = "0.0.1-alpha"
 dependencies = [
  "in_form_derive",
 ]
 
 [[package]]
 name = "in_form_derive"
-version = "1.0.0"
+version = "0.0.1-alpha"
 dependencies = [
  "proc-macro2",
  "quote",

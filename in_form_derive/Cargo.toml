@@ -1,7 +1,13 @@
 [package]
 name = "in_form_derive"
-version = "1.0.0"
+version = "0.0.1-alpha"
 edition = "2024"
+description = "Derive macro for `in_form::Renderer` trait."
+license = "MIT"
+repository = "https://github.com/Jsjjjs6066/in-form"
+keywords = ["form", "ui", "input"]
+categories = ["development-tools"]
+authors = ["Leon Žlender"]
 
 [lib]
 proc-macro = true
