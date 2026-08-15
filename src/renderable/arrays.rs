@@ -1,16 +1,17 @@
-use crate::{
-    Formable,
-    Renderable,
+use crate::Renderable;
+use crate::Component::{
+    self,
+    *,
 };
 
 impl<T: Renderable, const N: usize> Renderable for [T; N] {
-    fn render<F: Formable>(f: &F) -> Self {
-        std::array::from_fn(|_| T::render(f))
+    fn get_component() -> Component {
+        Array { ty: Box::new(T::get_component()), count: N }
     }
 }
 
-impl<T> Renderable for Vec<T> {
-    fn render<F: Formable>(f: &F) -> Self {
-        f.render_vec()
+impl<T: Renderable> Renderable for std::vec::Vec<T> {
+    fn get_component() -> Component {
+        Vec(Box::new(T::get_component()))
     }
 }

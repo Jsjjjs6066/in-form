@@ -1,35 +1,38 @@
 use crate::impl_renderable;
 use crate::Renderable;
-use crate::Formable;
+use crate::Component::{
+    self,
+    *,
+};
 
 impl_renderable!(i8 f {
-    f.render_i8()
+    Number
 });
 
 impl_renderable!(u8 f {
-    f.render_u8()
+    Number
 });
 
 impl_renderable!(i16 f {
-    f.render_i16()
+    Number
 });
 
 impl_renderable!(u16 f {
-    f.render_u16()
+    Number
 });
 
 impl_renderable!(i32 f {
-    f.render_i32()
+    Number
 });
 
 impl_renderable!(u32 f {
-    f.render_u32()
+    Number
 });
 
 impl_renderable!(i64 f {
-    f.render_i64()
+    Number
 });
 
 impl_renderable!(u64 f {
-    f.render_u64()
+    Number
 });

@@ -2,17 +2,18 @@ pub mod ints;
 pub mod floats;
 pub mod misc;
 pub mod arrays;
-use crate::formable::Formable;
+use crate::Component;
 
 pub trait Renderable {
-    fn render<F: Formable>(f: &F) -> Self;
+    fn get_component() -> Component;
+    // fn render<F: Formable>(f: &F) -> Self;
 }
 
 #[macro_export]
 macro_rules! impl_renderable {
-    ($ty:ident $f:ident { $($fn:tt)* }) => {
+    ($ty:ident f { $($fn:tt)* }) => {
         impl Renderable for $ty {
-            fn render<F: Formable>($f: &F) -> Self {
+            fn get_component() -> Component {
                 $($fn)*
             }
         }

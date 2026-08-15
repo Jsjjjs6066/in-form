@@ -3,13 +3,6 @@
 version = 4
 
 [[package]]
-name = "in_form"
-version = "1.0.0"
-dependencies = [
- "in_form_derive",
-]
-
-[[package]]
 name = "in_form_derive"
 version = "1.0.0"
 dependencies = [

@@ -1,17 +1,18 @@
-use crate::{
-    impl_renderable,
-    Formable,
-    Renderable,
+use crate::impl_renderable;
+use crate::Renderable;
+use crate::Component::{
+    self,
+    *,
 };
 
 impl_renderable!(String f {
-    f.render_string()
+    Text
 });
 
 impl_renderable!(bool f {
-    f.render_bool()
+    Bool
 });
 
 impl_renderable!(char f {
-    f.render_char()
+    Char
 });

@@ -1,13 +1,14 @@
-use crate::{
-    impl_renderable,
-    Formable,
-    Renderable,
+use crate::impl_renderable;
+use crate::Renderable;
+use crate::Component::{
+    self,
+    *,
 };
 
 impl_renderable!(f32 f {
-    f.render_f32()
+    Number
 });
 
 impl_renderable!(f64 f {
-    f.render_f64()
+    Number
 });

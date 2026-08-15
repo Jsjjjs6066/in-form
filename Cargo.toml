@@ -11,3 +11,4 @@ categories = ["development-tools"]
 authors = ["Leon Žlender"]
 
 [dependencies]
+in_form_derive = { path = "in_form_derive" }
