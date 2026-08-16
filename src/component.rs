@@ -1,3 +1,5 @@
+use crate::Formable;
+
 #[derive(Clone, Debug)]
 pub enum Component {
     Text,
@@ -13,4 +15,10 @@ pub enum Component {
 pub struct NamedComponent {
     pub name: &'static str,
     pub comp: Component,
+}
+
+impl NamedComponent {
+    pub fn render<F: Formable>(&self, f: &F) -> String {
+        f.render_form(self)
+    }
 }

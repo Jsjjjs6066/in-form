@@ -6,7 +6,6 @@ use crate::Component;
 
 pub trait Renderable {
     fn get_component() -> Component;
-    // fn render<F: Formable>(f: &F) -> Self;
 }
 
 #[macro_export]
