@@ -5,34 +5,20 @@ use crate::Component::{
     *,
 };
 
-impl_renderable!(i8 f {
-    Number
-});
+macro_rules! impl_int {
+    ($ty:ident) => {
+        impl_renderable!($ty f { Int {
+            min: $ty::MIN as i64,
+            max: $ty::MAX as u64,
+        } });
+    }
+}
 
-impl_renderable!(u8 f {
-    Number
-});
-
-impl_renderable!(i16 f {
-    Number
-});
-
-impl_renderable!(u16 f {
-    Number
-});
-
-impl_renderable!(i32 f {
-    Number
-});
-
-impl_renderable!(u32 f {
-    Number
-});
-
-impl_renderable!(i64 f {
-    Number
-});
-
-impl_renderable!(u64 f {
-    Number
-});
+impl_int!(i8);
+impl_int!(u8);
+impl_int!(i16);
+impl_int!(u16);
+impl_int!(i32);
+impl_int!(u32);
+impl_int!(i64);
+impl_int!(u64);

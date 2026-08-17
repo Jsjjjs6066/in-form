@@ -3,7 +3,8 @@ use crate::Formable;
 #[derive(Clone, Debug)]
 pub enum Component {
     Text,
-    Number,
+    Int { min: i64, max: u64 },
+    Float { min: f64, max: f64 },
     Bool,
     Char,
     Array { ty: Box<Component>, count: usize },

@@ -6,9 +6,15 @@ use crate::Component::{
 };
 
 impl_renderable!(f32 f {
-    Number
+    Float {
+        min: f32::MIN as f64,
+        max: f32::MAX as f64,
+    }
 });
 
 impl_renderable!(f64 f {
-    Number
+    Float {
+        min: f64::MIN,
+        max: f64::MAX,
+    }
 });
