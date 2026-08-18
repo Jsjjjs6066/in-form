@@ -1,5 +1,4 @@
 use in_form::Renderable;
-use in_form_derive::Renderable;
 
 #[derive(Renderable)]
 pub struct Test {

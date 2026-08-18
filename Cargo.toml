@@ -1,6 +1,6 @@
 [package]
 name = "in_form"
-version = "0.1.0-alpha"
+version = "0.1.1-alpha"
 edition = "2024"
 description = "Define a type and get your data from a GUI without writing one."
 license = "MIT"
