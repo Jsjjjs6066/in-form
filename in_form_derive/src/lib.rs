@@ -45,7 +45,7 @@ pub fn derive_renderable(input: TokenStream) -> TokenStream {
                 ::in_form::Component::FieldStruct(vec![
                     #( 
                         ::in_form::NamedComponent {
-                            name: #field_names_str,
+                            name: (#field_names_str).to_string(),
                             comp: <#field_types>::get_component(),
                         },
                     )*

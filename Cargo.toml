@@ -1,6 +1,6 @@
 [package]
 name = "in_form"
-version = "0.1.2-alpha"
+version = "0.2.0-alpha"
 edition = "2024"
 description = "Define a type and get your data from a GUI without writing one."
 license = "MIT"
@@ -11,4 +11,4 @@ categories = ["development-tools"]
 authors = ["Leon Žlender"]
 
 [dependencies]
-in_form_derive = { path = "in_form_derive", version = "0.0.2-alpha" }
+in_form_derive = { path = "in_form_derive", version = "0.1.0-alpha" }

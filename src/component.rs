@@ -14,7 +14,7 @@ pub enum Component {
 
 #[derive(Clone, Debug)]
 pub struct NamedComponent {
-    pub name: &'static str,
+    pub name: String,
     pub comp: Component,
 }
 
