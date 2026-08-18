@@ -46,7 +46,7 @@ pub fn derive_renderable(input: TokenStream) -> TokenStream {
                     #( 
                         ::in_form::NamedComponent {
                             name: #field_names_str,
-                            comp: #field_types ::get_component(),
+                            comp: <#field_types>::get_component(),
                         },
                     )*
                 ])

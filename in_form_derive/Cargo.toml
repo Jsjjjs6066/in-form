@@ -1,6 +1,6 @@
 [package]
 name = "in_form_derive"
-version = "0.0.1-alpha"
+version = "0.0.2-alpha"
 edition = "2024"
 description = "Derive macro for `in_form::Renderer` trait."
 license = "MIT"
